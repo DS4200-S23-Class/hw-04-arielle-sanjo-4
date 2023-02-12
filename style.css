@@ -1,0 +1,54 @@
+body{
+    font-family: Arial;
+    font-size: 30px;
+}
+
+/*align the text in the center*/
+.center{
+    text-align: center;
+}
+
+
+/*make the font size of the acknowledgments smaller*/
+#smaller{
+    font-size: 20px;
+}
+
+
+/* creating two uneven columns */
+.container {
+    display: flex;
+  }
+  
+  .left-column {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .right-column {
+    width: 40%;
+    padding: 20px;}
+
+    #frame {
+        width: 500px;
+        height: 500px;
+    }
+    
+    circle{
+        fill: rgb(69, 22, 123)
+    }
+    
+
+/* if you hover over the point the point should highlight */
+.point:hover {
+    fill: rgb(200, 167, 200);
+  }
+
+/* if a point is clicked, give the point a border */
+.point {
+    cursor: pointer;
+  }
+  
+  .point:focus {
+    border: 5px solid white;
+  }
