@@ -46,9 +46,12 @@ body{
 
 /* if a point is clicked, give the point a border */
 .point {
-    cursor: pointer;
-  }
-  
-  .point:focus {
-    border: 5px solid white;
-  }
+  cursor: pointer;
+  border: none;
+}
+
+.point.selected {
+  border: 5px solid white;
+}
+
+
