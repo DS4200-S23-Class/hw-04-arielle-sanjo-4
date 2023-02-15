@@ -1,68 +1,86 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
-    <!--style-->
-    <link rel="stylesheet" href="style.css">
-    <!-- add title -->
-    <title>hw-04</title>
+  <!--style-->
+  <link rel="stylesheet" href="style.css">
+  <!-- add title -->
+  <title>hw-04</title>
 </head>
 
 
 <body>
 
-    <h1 class="center">hw-04: Event Handling</h1>
+  <h1 class="center">hw-04: Event Handling</h1>
 
-    <div class="container">
-        <div class="left-column">
-            <svg id="frame">
+  <div class="container">
+    <div class="left-column">
+      <svg id="frame">
 
-                <!-- NEED TO FIX THE BELOW TWO LINES TO MAKE LINES -->
-                <line x1="0" y1="0" x2="0" y2="0" stroke="black" />
-                <line x1="0" y1="0" x2="0" y2="0" stroke="black" />
-              
-                <circle class="point" cx="50" cy="450" r="8"/>
-                <circle class="point" cx="100" cy="400" r="8"  />
-                <circle class="point" cx="400" cy="450" r="8"  />
-                <circle class="point" cx="450" cy="100" r="8" />
-              </svg>
+        <!-- add axis -->
+        <line x1="0" y1="500" x2="500" y2="500" stroke="black" class ="axis_style" />
+        <line x1="0" y1="0" x2="0" y2="500" stroke="black" class ="axis_style"/>
 
-        </div>
-          <!-- add comments -->
-          <div class="right-column">
-            <form>
-                Select the x coordinate for the point you want to add: 
-                <select id="x">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-                <br><br>
-                Select the y coordinate for the point you want to add: 
-                <select id="y">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                </select>
-                <br><br>
-                <input type="button" value="Add Circle" onclick="addCircle()">
-              </form>
-        </div>
-      </div>
-    
- <!-- in order to add functionality we need to add java -->
+        <!-- add original points -->
+        <circle class="point" cx="50" cy="450" r="8"/>
+        <circle class="point" cx="100" cy="400" r="8"  />
+        <circle class="point" cx="400" cy="450" r="8"  />
+        <circle class="point" cx="450" cy="100" r="8" />
+      </svg>
+
+    </div>
+    <!-- values for user to select x and y coordinates -->
+    <div class="right-column">
+      <form>
+        Select the x coordinate for the point you want to add:
+        <select id="x">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <br><br>
+        Select the y coordinate for the point you want to add:
+        <select id="y">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <br><br>
+        <input type="button" value="Add Circle" onclick="addCircle()">
+      </form>
+    </div>
+  </div>
+
+
+  <!-- acknowledgements -->
+  <h1 class="center" id="smaller"> Acknowledgements</h1>
+  <div id = "smaller">
+    <li><a href="https://www.geeksforgeeks.org/how-to-define-two-column-layout-using-flexbox/">two-column layout help</a></li>
+    <li><a href="https://www.w3schools.com/jsref/prop_element_classlist.asp">prop element help</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">DOM help</a></li>
+    <li><a href="https://www.w3schools.com/graphics/svg_intro.asp">svg help</a></li>
+    <li><a href="https://stackoverflow.com/questions/36904185/how-to-get-the-x-and-y-coordinates-of-an-svg-circle-in-javascript">coordinates help</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms">learning forms/user data help</a></li>
+    <li><a href="https://www.w3schools.com/html/html_forms.asp">HTML forms help</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">EventListener help</a></li>
+    <li><a href="https://stackoverflow.com/questions/11584061/adding-event-listeners-to-dynamically-created-elements">height adjustment help</a></li>
+    <li><a href="https://www.motiontricks.com/creating-dynamic-svg-elements-with-javascript/">dynamic svg help</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/remove">remove content in JS help</a><li>
+</div>
+
+<!-- in order to add functionality we need to add java -->
 <script src="main.js"></script>
 </body>
 
